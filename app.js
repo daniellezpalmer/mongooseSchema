@@ -6,4 +6,4 @@
   const mustache = require('mustache');
   const mustacheEpxress = require('mustache-express');
 
-  mongoose.connect('mongodb://localhost:27017/disneyPlushies');
+  mongoose.connect('mongodb://localhost:27017/disneyMovie');
