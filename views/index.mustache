@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Disney Movie Schema</title>
+  </head>
+  <body>
+    <h1>Add a movie to my Disney database!</h1>
+    <form class="" action="/add" method="post">
+      <input type="text" name="title" value="" placeholder="Add movie">
+      <input type="text" name="characters" value="" placeholder="Add characters">
+      <input type="text" name="release" value="" placeholder="Add release date">
+      <button type="submit" name="button">Create that movie, Yo!</button>
+    </form>
+    <h1>Movies</h1>
+    {{#movie}}
+    <form class="" action="/delete/{{title}}" method="post">
+      <p>{{title}}</p>
+      <p>{{characters}}</p>
+      <p>{{release}}</p>
+      <input type="submit" name="button" value="Delete">
+      <!-- <button type="button" name="button">Delete</button> -->
+    </form>
+    {{/movie}}
+  </body>
+</html>

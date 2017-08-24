@@ -20,6 +20,7 @@
     "bluebird": "^3.5.0",
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
+    "express-session": "^1.15.5",
     "mongodb": "^2.2.31",
     "mongoose": "^4.10.8",
     "mustache": "^2.3.0",
